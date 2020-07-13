@@ -25,4 +25,17 @@ def position_taken?(board, index)
   end
 end
 
+def input_to_index(input)
+  input = input.to_i
+  index = input - 1
+  return index
+end
 
+def move(board, index, char="X")
+  board[index] = char
+end
+
+def turn
+  puts "Where would you like to move? (0-9)"
+  
+end
